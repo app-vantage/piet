@@ -11,8 +11,8 @@ module Piet
       true
     end
 
-    def pngquant(path)
-      PngQuantizator::Image.new(path).quantize!
+    def pngquant(path, opts={})
+      PngQuantizator::Image.new(path).quantize!(opts)
     end
 
     private
